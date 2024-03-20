@@ -57,11 +57,25 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.List;
+
+//All test classes require the JUnit dependency. In this case, the required JUnit-4.13.2 version is not present in the local repository, causing the build failure. To resolve this issue, the JUnit dependency should be added to the build file (pom.xml or build.gradle depending on the project setup). 
+//Add the following lines to dependencies section in pom.xml file.
+/*
+   <dependency>
+     <groupId>junit</groupId>
+     <artifactId>junit</artifactId>
+     <version>4.13.2</version>
+     <scope>test</scope>
+   </dependency>
+*/
+// Or for a gradle project, add the following line to the dependencies section in the build.gradle file.
+// testImplementation 'junit:junit:4.13.2'
 
 public class CartTest {
 
@@ -84,3 +98,4 @@ public class CartTest {
         assertTrue("Books ArrayList should be empty", books.isEmpty());
     }
 }
+

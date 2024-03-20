@@ -51,6 +51,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import org.junit.Before;
@@ -66,6 +67,7 @@ public class BookGetAuthorTest {
     book = new Book();
   }   
 
+  // Prerequisite: The execution of this test needs JUnit 4.13.2 as an external dependency.
   @Test
   public void testGetAuthorWithValue() {
     String author = "John Doe";
@@ -74,11 +76,13 @@ public class BookGetAuthorTest {
     assertEquals("getAuthor method should return the correct author value", author, book.getAuthor());
   }
   
+  // Prerequisite: The execution of this test needs JUnit 4.13.2 as an external dependency. 
   @Test
   public void testGetAuthorWithoutValue() {
     assertNull("getAuthor method should return null when author value is not set", book.getAuthor());
   }
   
+  // Prerequisite: The execution of this test needs JUnit 4.13.2 as an external dependency.
   @Test
   public void testGetAuthorWithEmptyValue() {
     book.setAuthor("");

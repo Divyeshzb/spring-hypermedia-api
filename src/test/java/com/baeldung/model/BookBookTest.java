@@ -51,6 +51,7 @@ Please note: The above test scenarios are dependent on the specific implementati
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import static org.junit.Assert.assertEquals;

@@ -58,6 +58,7 @@ Scenario 4: Test for List of Books Integrity
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import org.junit.Before;
@@ -67,6 +68,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+
+// NOTE: These test cases require junit library version 4.13.2 as a prerequisite to run successfully.
+// If the test doesn't run, ensure the correct junit version is included in the build file (pom.xml for Maven, build.gradle for Gradle) and the repository where junit is fetched is accessible and correct.
+// If you're using a different version of junit, some adjustments in import statements or assertions may be needed. 
 
 public class CartGetBooksTest {
 

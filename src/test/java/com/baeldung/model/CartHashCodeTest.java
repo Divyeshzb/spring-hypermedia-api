@@ -65,10 +65,13 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import java.util.ArrayList;
-import org.junit.Assert;
+// Compilation failed because the project was unable to resolve the dependency for junit4:jar:4.13.2 and junit:jar:4.13.2
+// Please check the repository URL, ensure that junit4:jar:4.13.2 is available and force updates to resolve this issue.
+import org.junit.Assert; 
 import org.junit.Before;
 import org.junit.Test;
 
@@ -82,6 +85,8 @@ public class CartHashCodeTest {
         book = new Book("Author1", "Title1", "Isbn1");
     }
     
+    // Compilation failed because the project was unable to resolve the dependency for junit4:jar:4.13.2 and junit:jar:4.13.2
+    // Please check the repository URL, ensure that junit4:jar:4.13.2 is available and force updates to resolve this issue. 
     @Test
     public void testHashcodeForNonEmptyObject() {
         cart.add(book);
@@ -90,6 +95,8 @@ public class CartHashCodeTest {
         Assert.assertEquals(expectedHashCode, cart.hashCode());
     }
 
+    // Compilation failed because the project was unable to resolve the dependency for junit4:jar:4.13.2 and junit:jar:4.13.2
+    // Please check the repository URL, ensure that junit4:jar:4.13.2 is available and force updates to resolve this issue.
     @Test
     public void testHashcodeForNullBooksObject() {
         cart.setPurchased(true);
@@ -97,6 +104,8 @@ public class CartHashCodeTest {
         Assert.assertEquals(expectedHashCode, cart.hashCode());
     }
 
+    // Compilation failed because the project was unable to resolve the dependency for junit4:jar:4.13.2 and junit:jar:4.13.2
+    // Please check the repository URL, ensure that junit4:jar:4.13.2 is available and force updates to resolve this issue.
     @Test
     public void testHashcodeForUnpurchasedObject() {
         cart.add(book);
@@ -105,6 +114,8 @@ public class CartHashCodeTest {
         Assert.assertEquals(expectedHashCode, cart.hashCode());
     }
     
+    // Compilation failed because the project was unable to resolve the dependency for junit4:jar:4.13.2 and junit:jar:4.13.2
+    // Please check the repository URL, ensure that junit4:jar:4.13.2 is available and force updates to resolve this issue.
     @Test
     public void testHashcodeForIdenticalObjects() {
         Cart cart2 = new Cart();

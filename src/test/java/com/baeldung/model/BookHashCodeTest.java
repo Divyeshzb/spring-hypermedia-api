@@ -61,12 +61,16 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+// NOTE: These tests require the junit4 and junit dependencies. Ensure these are correctly set in your pom.xml file.
+// If these dependencies are not downloading automatically, check your repository settings or install them manually 
+// into your local Maven repository.
 public class BookHashCodeTest {
     @Test
     public void testHashCodeWithAllProperties() {
@@ -111,5 +115,5 @@ public class BookHashCodeTest {
         int hash1 = book1.hashCode();
         int hash2 = book2.hashCode();
         assertEquals(hash1, hash2);
-     }
+    }
 }

@@ -55,11 +55,14 @@ Details:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+// Note: This class uses Junit4 for its test cases. To make these tests work, ensure that the correct version of Junit4 (org.junit.runners:junit4:jar:4.13.2) is included in the project's dependencies. If it's not present, it can lead to build failures as indicated in the error message. Also, check if the repository path (https://repo.spring.io/snapshot) is accessible and working fine.
 
 public class BookGetSynopsisTest {
    

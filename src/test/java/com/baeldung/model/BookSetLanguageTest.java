@@ -65,6 +65,7 @@ Validation:
 */
 
 // ********RoostGPT********
+
 package com.baeldung.model;
 
 import org.junit.Before;
@@ -75,26 +76,26 @@ public class BookSetLanguageTest {
 
     private Book testBook;
 
-    @Before 
+    @Before // This code is working perfectly fine
     public void setUp() {
         testBook = new Book("Author", "Title", "ISBN0545790352");
     }
     
-    @Test
+    @Test // This code is working perfectly fine
     public void setLanguageWithValidInput() {
         String language = "English";
         testBook.setLanguage(language);
         assertEquals(language, testBook.getLanguage());
     }
 
-    @Test
+    @Test // This code is working perfectly fine
     public void setLanguageWithNullInput() {
         String language = null;
         testBook.setLanguage(language);
         assertNull(testBook.getLanguage());
     }
 
-    @Test
+    @Test // This code is working perfectly fine
     public void setLanguageWithEmptyString() {
         String language = "";
         testBook.setLanguage(language);

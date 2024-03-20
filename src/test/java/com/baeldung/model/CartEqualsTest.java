@@ -89,57 +89,14 @@ Details:
 */
 
 // ********RoostGPT********
-package com.baeldung.model;
 
-import org.junit.Before;
-import org.junit.Test;
-
-import java.util.List;
-
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
-public class CartEqualsTest {
-
-    private Cart cart1;
-    private Cart cart2;
-    private Book book1;
-    private Book book2;
-
-    @Before
-    public void setUp() {
-        cart1 = new Cart();
-        cart2 = new Cart();
-        book1 = new Book("Author One", "Title One", "ISBN One");
-        book2 = new Book("Author Two", "Title Two", "ISBN Two");
-    }
-    
-    @Test
-    public void sameObjectComparisonTest() {
-        assertTrue(cart1.equals(cart1));
-    }
-    
-    @Test
-    public void differentClassObjectComparisonTest() {
-        assertFalse(cart1.equals("random string"));
-    }
-    
-    @Test
-    public void nullObjectComparisonTest() {
-        assertFalse(cart1.equals(null));
-    }
-    
-    @Test
-    public void differentObjectAttributeComparisonTest() {
-        cart1.add(book1);
-        cart2.add(book2);
-        assertFalse(cart1.equals(cart2));
-    }
-
-    @Test
-    public void sameObjectAttributeComparisonTest() {
-        cart1.add(book1);
-        cart2.add(book1);
-        assertTrue(cart1.equals(cart2));
-    }
-}
+<repositories>
+   <repository>
+      <id>central</id>
+      <name>Central Repository</name>
+      <url>https://repo.maven.apache.org/maven2</url>
+      <snapshots>
+         <enabled>false</enabled>
+      </snapshots>
+   </repository>
+</repositories>

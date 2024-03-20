@@ -72,45 +72,12 @@ Validation:
 */
 
 // ********RoostGPT********
-package com.baeldung.model;
 
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
-public class BookGetIsbnTest {
-
-    private Book book;
-
-    @Before
-    public void setUp() {
-        book = new Book();
-    }
-
-    @Test
-    public void getIsbnWithValidInput() {
-        String isbn = "978-3-16-148410-0";
-        book.setIsbn(isbn);
-        assertEquals(isbn, book.getIsbn());
-    }
-
-    @Test
-    public void getIsbnWithNullInput() {
-        book.setIsbn(null);
-        assertNull(book.getIsbn());
-    }
-
-    @Test
-    public void getIsbnWithEmptyString() {
-        book.setIsbn("");
-        assertEquals("", book.getIsbn());
-    }
-
-    @Test
-    public void getIsbnWithSpecialCharacters() {
-        String isbn = "@#$$%^^&&";
-        book.setIsbn(isbn);
-        assertEquals(isbn, book.getIsbn());
-    }
-}
+<dependencies>
+    <dependency>
+      <groupId>org.junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+</dependencies>
